@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    background-color: hsl(0, 0%, 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one one two three"
+                         "four five five three";
+    gap: 10px;
+
+}
+.profile{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.profile img{
+    border-radius: 50%;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    background-color: hsl(263, 55%, 52%);
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: one;
+}
+.one p{
+    color: lightgray;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    background-color: hsl(217, 19%, 35%);
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: two;
+}
+.two p{
+    color: lightgray;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: three;
+}
+.three p{
+    color: lightgray;
+}
+.four{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: four;
+}
+.four p{
+    color: lightgray;
+}
+.five{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    background-color: hsl(219, 29%, 14%);
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: five;
+}
+.fivep{
+    color: lightgray;
+}
+h2{
+    font-size: 15px;
+}
+p{
+    font-size: 12px;
+}
